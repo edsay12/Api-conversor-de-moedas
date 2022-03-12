@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AutoConverter</title>
+</head>
+
+<body>
+    <div class="box-load">
+        <div class="preload"> </div>
+    </div>
+    
+    <div class="titleText">
+        <span>currency</span> converter
+    </div>
+    <main class="container">
+        <section class="mainCard">
+            <div class="card">
+                <input type="number" onkeydown="getCurrencies()" id="PInput" value="1" name="">
+
+
+                <div class="country">
+                    <div class="title">Moeda selecionada</div>
+                    <div class="countryInformations">
+                        <div class="dropdown" id="dropdown">
+                            <div class="selector">
+                                <div class="selectFields">
+                                    <input id="DataValue" type="text">
+                                    <img src="img/brazil.jpg" alt="">
+
+                                    <p>BRL</p>
+                                </div>
+
+                                <ul class="lists" id="FirstList">
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <div class="country">
+
+                    <div class="countryInformations">
+                        <div class="dropdown">
+                            <div class="selector">
+                                <div class="selectFields">
+                                    <img src="img/Estados unidos-USD.jpg" alt="">
+
+                                    <p>USD</p>
+                                </div>
+
+                                <ul class="lists"></ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="cardLine"></div>
+                </div>
+                <input type="text" readonly value="0" name="">
+            </div>
+            <!-- endcard -->
+            <div class="card">
+                <div class="country">
+
+                    <div class="countryInformations">
+                        <div class="dropdown">
+                            <div class="selector">
+                                <div class="selectFields">
+                                    <img src="img/Japao- JPY.jpg" alt="">
+                                    <p>JPY</p>
+                                </div>
+
+                                <ul class="lists"></ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="cardLine"></div>
+                </div>
+                <input type="text" readonly value="0" name="">
+            </div>
+            <div class="card">
+                <div class="country">
+                    <div class="countryInformations">
+                        <div class="dropdown">
+                            <div class="selector">
+                                <div class="selectFields">
+                                    <img src="img/Europa - EUR.png" alt="">
+                                    <p>EUR</p>
+                                </div>
+                                <ul class="lists"></ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="cardLine"></div>
+                </div>
+                <input type="text" readonly value="0" name="">
+            </div>
+            <div class="plus">
+                <img src="img/plus_ico.png" alt="">
+                <p>Adicionar novo card </p>
+            </div>
+            <!-- endcard -->
+
+
+
+
+
+
+        </section>
+
+
+
+    </main>
+
+</body>
+<script src="script.js"></script>   
+
+</html>

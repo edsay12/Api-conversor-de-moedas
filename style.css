@@ -1,0 +1,297 @@
+/* reset  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    
+}
+.preload{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn.dribbble.com/users/172906/screenshots/1672303/2014-08-05_23_14_21.gif');
+    background-position: center;
+    background-size: contain;
+    
+    
+    
+    
+}
+.box-load{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+    
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+.titleText{
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: red;
+}
+.titleText span{
+    color: white;
+    
+}
+
+.logo img {
+    width: 200px;
+
+}
+
+header nav .links ul {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.mainCard .card {
+    background-color: #3F393B;
+    color: white;
+    max-width: 500px;
+    height: 150px;
+    padding: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.mainCard {
+    margin-top: 100px;
+}
+
+.mainCard .card input {
+    height: 80%;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 50px;
+    text-align: end;
+
+}
+#DataValue{
+        display: none;
+}
+
+
+/* hide arrows from input type text  */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.mainCard .card .country {
+    background-color: #2F2929;
+    padding: 13px 20px;
+    border-radius: 20px;
+}
+
+.mainCard .card .country .countryInformations {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    height: 30px;
+
+}
+
+.mainCard .card .country .countryInformations .countryLogo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+.cards {
+    display: flex;
+    margin-top: 70px;
+    max-width: 500px;
+    height: 200px;
+    width: 100%;
+    color: white;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    max-width: 240px;
+    width: 100%;
+    height: 150px;
+    padding: 10px 20px;
+    background-color: #2C2A2B;
+    border-radius: 20px;
+}
+
+.cards .card .country .countryInformations {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.cards .card .country {
+    width: 100%;
+}
+
+.cards .card .country .countryInformations .countryLogo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.cards .card input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: end;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.cards .card .cardLine {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 5px;
+}
+
+
+
+.selector {
+    /* width: 350px; */
+    z-index: 1;
+
+
+
+}
+
+.selectFields{
+    /* background-color: rgba(255, 255, 255, 0.349); */
+    cursor: pointer;
+    color: black;
+    margin-bottom: 5px;
+    position: relative;
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+.selectFields img {
+    width: 40px;
+    margin-right:20px ;
+
+}
+.lists{
+    background-color: rgba(39, 36, 36, 0.459);
+    overflow:auto;
+    margin-top: 25px;
+    height: 200px;
+    display: none;
+    position: absolute;
+    width: 300px;
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+/* estilizando a barra de rolagem */
+
+/* parte do meio  */
+.lists::-webkit-scrollbar-thumb {
+    background:black;
+    border-radius: 20px;
+}
+
+
+.lists::-webkit-scrollbar {
+    width: 10px;
+    background: #F4F4F4;
+    border-radius: 20px;
+}
+
+
+.options{
+    padding: 15px 0 15px 75px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+  
+    display: flex;
+}
+
+.options div{
+    margin-left: 18px;
+}
+.lists .options img{
+    width: 40px;
+    position: absolute;
+    top: 12px;
+    left: 25px;
+}
+.options:hover{
+    background-color: rgb(0, 0, 0);
+}
+.lists.selected{
+    display: block;
+}
+
+
+.plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 240px;
+    height: 150px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.plus img{
+    width: 80px;
+}
+.plus p{
+    margin-top: 10px;
+}
